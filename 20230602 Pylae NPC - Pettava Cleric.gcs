@@ -27,12 +27,12 @@
 	},
 	"settings": {
 		"page": {
-			"paper_size": "a4",
+			"paper_size": "letter",
 			"orientation": "portrait",
-			"top_margin": "0.25 in",
-			"left_margin": "0.25 in",
-			"bottom_margin": "0.25 in",
-			"right_margin": "0.25 in"
+			"top_margin": "0.15 in",
+			"left_margin": "0.15 in",
+			"bottom_margin": "0.15 in",
+			"right_margin": "0.15 in"
 		},
 		"block_layout": [
 			"reactions conditional_modifiers",
@@ -314,14 +314,12 @@
 				"id": "tm_excess",
 				"type": "integer",
 				"name": "Excess PT",
-				"full_name": "Excess Power Tally",
 				"attribute_base": "$tm_pt - $tm_threshold"
 			},
 			{
 				"id": "tm_calamity_bonus",
 				"type": "integer",
 				"name": "Calamity Bonus",
-				"full_name": "Calamity Roll Bonus",
 				"attribute_base": "signed(floor($tm_excess / if(trait_level(Safer Magical Excess) \u003e= 1, round(5*pow(2,trait_level(Safer Magical Excess))), 5)))"
 			}
 		],
@@ -7654,7 +7652,7 @@
 		}
 	],
 	"created_date": "2023-06-03T23:51:38+02:00",
-	"modified_date": "2023-06-04T00:23:08+02:00",
+	"modified_date": "2023-07-03T21:41:56+02:00",
 	"calc": {
 		"swing": "1d+2",
 		"thrust": "1d-1",
